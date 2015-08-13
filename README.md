@@ -1,4 +1,4 @@
-# The RichOS Project
+# [The RichOS Project](http://richos.org)
 
 Hello! Thanks for stopping by. I started this project so I have a playground to
 exercise my problem solving skills and grow my computer science knowledge. I
@@ -50,7 +50,10 @@ There's a lot to be done but there's only so much time in a day. Slowly but
 surely! I think it would be fun to collaborate if anyone is interested.
 Let me know.
 
-Thanks for looking.
+Check out the project's website if you'd like at
+[http://www.richos.org](http://www.richos.org).
+
+Thanks for looking. 
 
 Sincerely,
 
