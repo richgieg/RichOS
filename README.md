@@ -1,6 +1,6 @@
 # The RichOS Project
 
-Hello, thanks for stopping by! I started this project so I have a playground to
+Hello! Thanks for stopping by. I started this project so I have a playground to
 exercise my problem solving skills and grow my computer science knowledge. I
 really enjoy writing low-level software like this. I'm still learning and I'm
 not exactly a whiz at it yet, but there's a unique feeling that comes along
@@ -15,7 +15,7 @@ interest:
 - NASM, GCC, ld, and objcopy are all required to build the OS.
 - Upon successful execution of the build script (build.sh) there will be a
 flat binary file bin/richos.flp.
-- I test the RichOS using VMware Player, pointing the virtual floppy drive to
+- I test RichOS using VMware Player, pointing the virtual floppy drive to
 bin/richos.flp.
 - I also test RichOS on a physical machine by writing bin/richos.flp to a USB
 flash drive, starting at the first sector, then setting my PC to boot from the
