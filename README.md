@@ -1,4 +1,4 @@
-# [The RichOS Project](http://richos.org)
+# [The RichOS Project](http://richgieg.com/richos)
 
 Hello! Thanks for stopping by. I started this project so I have a playground to
 exercise my problem solving skills and grow my computer science knowledge. I
@@ -50,8 +50,11 @@ There's a lot to be done but there's only so much time in a day. Slowly but
 surely! I think it would be fun to collaborate if anyone is interested.
 Let me know.
 
-Check out the project's website if you'd like at
-[http://www.richos.org](http://www.richos.org).
+The project's website:
+[http://www.richgieg.com/richos](http://www.richgieg.com/richos).
+
+My website:
+[http://www.richgieg.com](http://www.richgieg.com).
 
 Thanks for looking. 
 
