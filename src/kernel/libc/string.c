@@ -4,23 +4,15 @@ void _memcpy_asm(int *destination, const int *source, size_t num);
 
 void *memcpy(void *destination, const void *source, size_t num)
 {
-    int *dst_dword;
-    const int *src_dword;
-    char *dst_byte;
-    const char *src_byte;
     size_t dwords_to_copy;
     size_t bytes_to_copy;
     size_t distance;
-
-    // Initialize the byte pointers.
-    dst_byte = destination;
-    src_byte = source;
     
     // If the number of bytes to copy is less than the size of a double-word,
     // then just copy bytes. Otherwise, we will copy double-words.
     if (num < sizeof(int)) {
         while (num--)
-            *dst_byte++ = *src_byte++;
+            *(char *)destination++ = *(char *)source++;
     } else {
 
         // Calculate distance between addresses.
@@ -43,24 +35,22 @@ void *memcpy(void *destination, const void *source, size_t num)
 
             // Copy the leading bytes.
             while (bytes_to_copy--) {
-                *dst_byte++ = *src_byte++;
+                *(char *)destination++ = *(char *)source++;
             }
         }
 
-        // Initialize pointers for double-word copy.
-        dst_dword = (int *)dst_byte;
-        src_dword = (const int *)src_byte;
-        dwords_to_copy = num / sizeof(int);
-
         // Call the opimized assembly routine for double-word copy.
-        _memcpy_asm(dst_dword, src_dword, dwords_to_copy);
+        dwords_to_copy = num / sizeof(int);
+        _memcpy_asm(destination, source, dwords_to_copy);
+
+        // Advance the pointers.
+        destination = destination + dwords_to_copy * sizeof(int);
+        source = source + dwords_to_copy * sizeof(int);        
 
         // Copy trailing bytes, if any.
-        dst_byte = (char *)(dst_dword + dwords_to_copy);
-        src_byte = (const char *)(src_dword + dwords_to_copy);
         bytes_to_copy = num % sizeof(int);
         while (bytes_to_copy--)
-            *dst_byte++ = *src_byte++;
+            *(char *)destination++ = *(char *)source++;
     }
 
     return destination;
