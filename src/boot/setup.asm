@@ -100,8 +100,9 @@ end_move:
 [bits 32]
 go:     mov     ax,0x10
 
-; Set DS to the data segment (0x10).
+; Set DS/ES to the data segment (0x10).
         mov     ds,ax
+        mov     es,ax
         
 ; Put stack at 0x200000 (2nd megabyte boundary).
         mov     ss,ax

@@ -17,5 +17,11 @@ void main()
     uitoa(system_init_data.kilobytes_of_memory, buffer, 10);
     puts(buffer, 328);
 
+    // Test memcpy by copying five megabytes of data.
+    char *test = "This is a test string for memcpy!";
+    memcpy((void *)0x300000, test, 1024 * 1024 * 5);
+    // Display the copied string at the beginning of the copied data.
+    puts((void *)0x300000, 400);
+
     while (1) ;
 }

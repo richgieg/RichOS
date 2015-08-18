@@ -6,7 +6,7 @@
 static const struct SystemInitData g_SystemInitData;
 
 static void MoveSystemInitData();
-extern void main();
+void main();
 
 void _start()
 {

@@ -32,7 +32,9 @@ gcc -Wall -m32 -ffreestanding -nostdinc -c \
     -Isrc/kernel/include/ \
     -Isrc/kernel/libc/include/ \
     -o bin/kernel/libc/string.o \
-    src/kernel/libc/string.c  
+    src/kernel/libc/string.c
+
+nasm -f elf -o bin/kernel/libc/string_asm.o src/kernel/libc/string.asm    
     
 # Link the kernel object files.
 ld -m elf_i386 -Ttext 0 -o bin/kernel/kernel.tmp \
@@ -40,7 +42,8 @@ ld -m elf_i386 -Ttext 0 -o bin/kernel/kernel.tmp \
     bin/kernel/main.o \
     bin/kernel/text.o \
     bin/kernel/libc/stdlib.o \
-    bin/kernel/libc/string.o
+    bin/kernel/libc/string.o \
+    bin/kernel/libc/string_asm.o
 
 # Extract necessary sections from linked image.
 objcopy -O binary \
