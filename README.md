@@ -1,11 +1,9 @@
 # [The RichOS Project](http://richgieg.com/richos)
 
-Hello! Thanks for stopping by. I started this project so I have a playground to
+I started this project so I have a playground to
 exercise my problem solving skills and grow my computer science knowledge. I
-really enjoy writing low-level software like this. I'm still learning and I'm
-not exactly a whiz at it yet, but there's a unique feeling that comes along
-with knowing my code is the only code running on the CPU. Not Windows, not
-Linux, just RichOS. Sure, it's reinventing the wheel... and call me crazy...
+enjoy writing low-level software like this. There's something exciting about
+having full control over the machine. Sure, I'm just reinventing the wheel...
 but I think it's really fun!
 
 This project is in its very early stages at this time. Here are some points of
