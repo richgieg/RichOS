@@ -48,11 +48,8 @@ There's a lot to be done but there's only so much time in a day. Slowly but
 surely! I think it would be fun to collaborate if anyone is interested.
 Let me know.
 
-The project's website:
-[http://www.richgieg.com/richos](http://www.richgieg.com/richos).
-
 My website:
-[http://www.richgieg.com](http://www.richgieg.com).
+[http://www.richgieg.com](http://www.richgieg.com)
 
 Thanks for looking. 
 
