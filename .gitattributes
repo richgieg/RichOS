@@ -1,4 +1,5 @@
+*                     text=auto
 *.sh                  eol=lf
 *.sln                 eol=crlf
 *.vcxproj             eol=crlf
-*.vcxproxy.filters    eol=crlf
+*.vcxproj.filters     eol=crlf
